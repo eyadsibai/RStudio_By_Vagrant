@@ -28,7 +28,7 @@ apt-get install -y libapparmor1
 apt-get install -y openjdk-7-jre-headless
 apt-get install -y r-base
 apt-get install -y apt-file
-
+apt-get install -y texlive-binaries
 ###
 # install dependencies for rgdal R package
 sudo apt-get install -y libgdal1-dev gdal-bin libproj-dev
