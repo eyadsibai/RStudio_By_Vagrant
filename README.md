@@ -17,6 +17,22 @@ Now you can visit the following URLs in your browser and login:
      User: rstudio
      Password: password
 
+5. Now that the virtual machine is running, you can package it into a .box file.
+
+```
+vagrant package --base affy-rstudio --output virtualbox/affy-rstudio.box
+vagrant box add -f affy-rstudio virtualbox/affy-rstudio.box
+vagrant destroy
+```
+
+6. Use the .box file to start the virtual machine again. This time faster!
+
+```
+cd virtualbox
+vagrant up
+```
+
+
 2014-04-16 - Google Chrome has stopped working to display the site. However, Firefox is working fine.
 
 You can SSH to the node using the following command. Notice that the hostname starts with 'affy-' but that 
