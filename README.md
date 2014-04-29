@@ -11,12 +11,12 @@ Start a single Ubuntu Precise (12.04) node containing R and RStudio that respond
 
 4. Run 'Vagrant up'
 
-Now you can visit the following URL in your browser and login:
+Now you can visit <a target="_blank" href="http://affy-rstudio:8787/">http://affy-rstudio:8787/</a> and login using:
 
-http://affy-rstudio:8787/
-
+```
      User: rstudio
      Password: password
+```
 
 5. Now that the virtual machine is running, you can package it into a .box file.
 
