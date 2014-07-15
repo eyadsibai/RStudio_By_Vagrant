@@ -34,11 +34,11 @@ apt-get install -y texlive-binaries
 sudo apt-get install -y libgdal1-dev gdal-bin libproj-dev
 
 
-wget -q http://download2.rstudio.org/rstudio-server-0.98.953-amd64.deb
-wget -q http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.0.0.42-amd64.deb
+wget -q http://download2.rstudio.org/rstudio-server-0.98.976-amd64.deb
+wget -q http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.2.0.359-amd64.deb
 
-gdebi -n rstudio-server-0.98.953-amd64.deb
-gdebi -n shiny-server-1.0.0.42-amd64.deb
+gdebi -n rstudio-server-0.98.976-amd64.deb
+gdebi -n shiny-server-1.2.0.359-amd64.deb
 
 chmod -R 777 /usr/lib/R/library
 chmod -R 777 /usr/share/R/doc
