@@ -5,11 +5,8 @@ Start a single Ubuntu Precise (12.04) node containing R and RStudio that respond
 
 1. Install Vagrant
 2. Download this project.
-3. Add the following to your /etc/host file.
-
-10.211.55.110	rstudio-server
-
-4. Run 'Vagrant up'
+3. Run 'vagrant plugin install vagrant-hostmanager'
+4. Run 'vagrant up'
 
 Now you can visit <a target="_blank" href="http://rstudio-server:8787/">http://rstudio-server:8787/</a> and login using:
 
