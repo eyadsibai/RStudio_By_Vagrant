@@ -7,30 +7,15 @@ Start a single Ubuntu Precise (12.04) node containing R and RStudio that respond
 2. Download this project.
 3. Add the following to your /etc/host file.
 
-10.211.55.110	affy-rstudio
+10.211.55.110	rstudio-server
 
 4. Run 'Vagrant up'
 
-Now you can visit <a target="_blank" href="http://affy-rstudio:8787/">http://affy-rstudio:8787/</a> and login using:
+Now you can visit <a target="_blank" href="http://rstudio-server:8787/">http://rstudio-server:8787/</a> and login using:
 
 ```
      User: rstudio
      Password: password
-```
-
-5. Now that the virtual machine is running, you can package it into a .box file.
-
-```
-vagrant package --base affy-rstudio --output virtualbox/affy-rstudio.box
-vagrant box add -f affy-rstudio virtualbox/affy-rstudio.box
-vagrant destroy
-```
-
-6. Use the .box file to start the virtual machine again. This time faster!
-
-```
-cd virtualbox
-vagrant up
 ```
 
 
