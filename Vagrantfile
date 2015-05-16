@@ -1,5 +1,5 @@
 
-rstudio_node_name = "affy-rstudio"
+rstudio_node_name = "rstudio-server"
 
 Vagrant.configure("2") do |config|
 
