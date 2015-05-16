@@ -6,7 +6,7 @@ if [ -f /.vagrant_build_done ]; then
 fi
 
 cat > /etc/hosts <<EOF
-10.211.55.110   affy-rstudio
+10.211.55.110   rstudio-server
 EOF
 
 export PASSWORD=`openssl passwd -1 password`
@@ -26,7 +26,7 @@ apt-get install libcurl4-openssl-dev
 apt-get install -y gdebi-core
 apt-get install -y libapparmor1
 apt-get install -y openjdk-7-jre-headless
-apt-get install -y r-base
+apt-get install -y r-base-core
 apt-get install -y apt-file
 apt-get install -y texlive-binaries
 ###
@@ -34,11 +34,11 @@ apt-get install -y texlive-binaries
 sudo apt-get install -y libgdal1-dev gdal-bin libproj-dev
 
 
-wget -q http://download2.rstudio.org/rstudio-server-0.98.976-amd64.deb
-wget -q http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.2.0.359-amd64.deb
+wget -q http://download1.rstudio.org/rstudio-0.98.1103-amd64.deb
+wget -q wget http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.3.0.403-amd64.deb
 
-gdebi -n rstudio-server-0.98.976-amd64.deb
-gdebi -n shiny-server-1.2.0.359-amd64.deb
+gdebi -n rstudio-0.98.1103-amd64.deb
+gdebi -n shiny-server-1.3.0.403-amd64.deb
 
 chmod -R 777 /usr/lib/R/library
 chmod -R 777 /usr/share/R/doc
